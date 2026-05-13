@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem *)",
+      "Bash(gh api *)",
+      "PowerShell(Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/zubair-trabzada/geo-seo-claude/main/install-win.sh\" -UseBasicParsing | Select-Object -ExpandProperty Content)",
+      "Bash(git --version)",
+      "Bash(mktemp -d)",
+      "Bash(git clone *)",
+      "PowerShell(Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/README.md\" -UseBasicParsing | Select-Object -ExpandProperty Content | Select-Object -First 100)"
+    ]
+  }
+}
