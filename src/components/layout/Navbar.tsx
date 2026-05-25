@@ -157,14 +157,14 @@ export default function Navbar() {
             {/* Right CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href="tel:+17572920515"
+                href="tel:+12395618880"
                 className={cn(
                   "flex items-center gap-2 text-sm font-medium transition-colors duration-300",
                   scrolled || !isHome ? "text-brand-gray-600 hover:text-brand-teal" : "text-white/80 hover:text-white"
                 )}
               >
                 <Phone size={15} />
-                <span className="hidden xl:block">(757) 292-0515</span>
+                <span className="hidden xl:block">(239) 561-8880</span>
               </a>
               <Link href="/book-appointment" className="btn-primary text-sm py-3 px-6">
                 <Calendar size={15} />
@@ -233,11 +233,11 @@ export default function Navbar() {
 
               <div className="mt-auto pt-8 flex flex-col gap-3">
                 <a
-                  href="tel:+17572920515"
+                  href="tel:+12395618880"
                   className="flex items-center gap-3 py-3.5 px-6 rounded-2xl border border-brand-gray-200 text-brand-navy font-semibold"
                 >
                   <Phone size={18} className="text-brand-teal" />
-                  (757) 292-0515
+                  (239) 561-8880
                 </a>
                 <Link href="/book-appointment" className="btn-primary justify-center py-4 text-base">
                   <Calendar size={18} />

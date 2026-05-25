@@ -92,7 +92,7 @@ export default function PatientResourcesPage() {
               <h2 className="font-serif text-2xl font-bold text-white mb-3">Can&apos;t find what you need?</h2>
               <p className="text-white/60 mb-7">Our patient care team is happy to assist with any questions about your resources, forms, or insurance.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="tel:+17572920515" className="btn-primary shadow-teal-glow">Call Us Now</a>
+                <a href="tel:+12395618880" className="btn-primary shadow-teal-glow">Call Us Now</a>
                 <Link href="/contact" className="btn-ghost-white">
                   Send a Message <ArrowRight size={16} />
                 </Link>

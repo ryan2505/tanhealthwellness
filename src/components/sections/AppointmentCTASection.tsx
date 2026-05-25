@@ -54,7 +54,7 @@ export default function AppointmentCTASection() {
             {/* Contact options */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+17572920515"
+                href="tel:+12395618880"
                 className="flex items-center gap-3 px-6 py-4 rounded-2xl border-2 border-brand-gray-200 hover:border-brand-teal hover:text-brand-teal text-brand-navy font-semibold transition-all duration-300 group"
               >
                 <div className="w-10 h-10 rounded-xl bg-brand-teal/10 flex items-center justify-center group-hover:bg-brand-teal/20 transition-colors">
@@ -62,7 +62,7 @@ export default function AppointmentCTASection() {
                 </div>
                 <div>
                   <p className="text-xs text-brand-gray-400">Call us directly</p>
-                  <p className="font-bold">(757) 292-0515</p>
+                  <p className="font-bold">(239) 561-8880</p>
                 </div>
               </a>
               <div className="flex items-center gap-3 px-6 py-4 rounded-2xl border-2 border-brand-gray-100 bg-brand-gray-50 text-brand-gray-600">

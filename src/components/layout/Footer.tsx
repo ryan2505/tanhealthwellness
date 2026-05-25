@@ -40,8 +40,8 @@ export default function Footer() {
               911
             </a>{" "}
             immediately. For urgent care:{" "}
-            <a href="tel:+17572920515" className="font-bold underline underline-offset-2 hover:no-underline">
-              (757) 292-0515
+            <a href="tel:+12395618880" className="font-bold underline underline-offset-2 hover:no-underline">
+              (239) 561-8880
             </a>
           </p>
         </div>
@@ -66,11 +66,11 @@ export default function Footer() {
 
             {/* Contact Info */}
             <div className="flex flex-col gap-3">
-              <a href="tel:+17572920515" className="flex items-center gap-3 text-sm text-white/70 hover:text-white transition-colors group">
+              <a href="tel:+12395618880" className="flex items-center gap-3 text-sm text-white/70 hover:text-white transition-colors group">
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-brand-teal/20 transition-colors">
                   <Phone size={14} className="text-brand-tealLight" />
                 </div>
-                (757) 292-0515
+                (239) 561-8880
               </a>
               <a href="mailto:tanhealthmed@gmail.com" className="flex items-center gap-3 text-sm text-white/70 hover:text-white transition-colors group">
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-brand-teal/20 transition-colors">

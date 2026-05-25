@@ -55,7 +55,7 @@ const jsonLd = {
       "@id": "https://tanhealthwellness.com/#clinic",
       name: "Tan Health & Wellness",
       url: "https://tanhealthwellness.com",
-      telephone: "+17572920515",
+      telephone: "+12395618880",
       email: "tanhealthmed@gmail.com",
       address: {
         "@type": "PostalAddress",
@@ -85,7 +85,7 @@ const jsonLd = {
         { "@type": "EducationalOccupationalCredential", credentialCategory: "Medical Doctorate (MD)" },
         { "@type": "EducationalOccupationalCredential", credentialCategory: "Fellowship in Pain Management" },
       ],
-      telephone: "+17572920515",
+      telephone: "+12395618880",
       email: "tanhealthmed@gmail.com",
     },
   ],

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const locations = [
-  { name: "Tan Health & Wellness", address: "22904 Lyden Drive, Suite 102", city: "Estero, FL 33928", phone: "(757) 292-0515", hours: "Mon & Thu 2–5PM · Sat 1–4PM" },
+  { name: "Tan Health & Wellness", address: "22904 Lyden Drive, Suite 102", city: "Estero, FL 33928", phone: "(239) 561-8880", hours: "Mon & Thu 2–5PM · Sat 1–4PM" },
 ];
 
 export default function ContactPage() {
@@ -57,7 +57,7 @@ export default function ContactPage() {
             {/* Quick contact */}
             <div className="grid sm:grid-cols-3 gap-6">
               {[
-                { Icon: Phone, label: "Call Us", value: "(757) 292-0515", href: "tel:+17572920515", cta: "Call Now" },
+                { Icon: Phone, label: "Call Us", value: "(239) 561-8880", href: "tel:+12395618880", cta: "Call Now" },
                 { Icon: Mail, label: "Email Us", value: "tanhealthmed@gmail.com", href: "mailto:tanhealthmed@gmail.com", cta: "Send Email" },
                 { Icon: Clock, label: "Office Hours", value: "Mon & Thu 2–5PM · Sat 1–4PM", href: "/book-appointment", cta: "Book Online" },
               ].map(({ Icon, label, value, href, cta }) => (

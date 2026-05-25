@@ -14,7 +14,7 @@ const faqs = [
   {
     category: "Appointments",
     items: [
-      { q: "How do I schedule an appointment?", a: "You can book online through our website, call us directly at (757) 292-0515, or email us. We typically offer same-week appointments for new patients." },
+      { q: "How do I schedule an appointment?", a: "You can book online through our website, call us directly at (239) 561-8880, or email us. We typically offer same-week appointments for new patients." },
       { q: "Do I need a referral to see Dr. Tankeu?", a: "No referral is required. You can schedule a consultation directly. However, some insurance plans may require a referral for coverage — we recommend checking with your insurer." },
       { q: "What should I bring to my first appointment?", a: "Please bring a valid photo ID, your insurance card, any imaging results (MRI, X-ray, CT), a list of current medications, and any previous medical records relevant to your condition." },
       { q: "How long is the first appointment?", a: "Initial consultations typically last 60–90 minutes. We take the time to thoroughly review your history, perform a physical examination, and discuss your treatment options in detail." },
@@ -85,7 +85,7 @@ export default function FAQPage() {
               <h3 className="font-serif font-bold text-brand-navy text-2xl mb-3">Still have questions?</h3>
               <p className="text-brand-gray-500 mb-6">Our team is happy to answer any questions you have before your appointment.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="tel:+17572920515" className="btn-primary">Call Us Now</a>
+                <a href="tel:+12395618880" className="btn-primary">Call Us Now</a>
                 <Link href="/contact" className="btn-secondary">
                   Contact Us
                   <ArrowRight size={16} />
