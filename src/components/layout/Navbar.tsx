@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Menu, X, ChevronDown, Calendar } from "lucide-react";
@@ -68,28 +69,18 @@ export default function Navbar() {
         <div className="container-premium">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-brand flex items-center justify-center shadow-teal-glow-sm">
-                <span className="text-white font-bold text-lg font-serif">T</span>
-              </div>
-              <div className="flex flex-col">
-                <span
-                  className={cn(
-                    "font-serif font-bold text-lg leading-tight transition-colors duration-300",
-                    scrolled || !isHome ? "text-brand-navy" : "text-white"
-                  )}
-                >
-                  Tan Health
-                </span>
-                <span
-                  className={cn(
-                    "text-xs tracking-widest uppercase transition-colors duration-300",
-                    scrolled || !isHome ? "text-brand-teal" : "text-white/80"
-                  )}
-                >
-                  & Wellness
-                </span>
-              </div>
+            <Link href="/" className="flex items-center group">
+              <Image
+                src="/images/logo.png"
+                alt="TaN Health Wellness — Pain & Spine Center"
+                width={180}
+                height={72}
+                className={cn(
+                  "h-14 w-auto object-contain transition-all duration-300",
+                  scrolled || !isHome ? "brightness-100" : "brightness-0 invert"
+                )}
+                priority
+              />
             </Link>
 
             {/* Desktop Nav */}

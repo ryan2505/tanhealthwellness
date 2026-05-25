@@ -41,7 +41,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="rounded-4xl overflow-hidden aspect-[3/4] shadow-premium">
                   <Image
-                    src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=85"
+                    src="/images/dr-tankeu.jpg"
                     alt="Dr. Jovanie Serge Keusseu Tankeu — Medical Director, Tan Health & Wellness"
                     fill
                     className="object-cover object-top"

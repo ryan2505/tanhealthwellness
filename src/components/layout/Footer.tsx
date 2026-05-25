@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, AlertCircle, ArrowRight, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const footerLinks = {
@@ -50,14 +51,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal to-brand-tealLight flex items-center justify-center">
-                <span className="text-white font-bold text-xl font-serif">T</span>
-              </div>
-              <div>
-                <p className="font-serif font-bold text-xl text-white">Tan Health</p>
-                <p className="text-xs text-white/60 tracking-widest uppercase">& Wellness</p>
-              </div>
+            <Link href="/" className="inline-flex mb-6">
+              <Image
+                src="/images/logo.png"
+                alt="TaN Health Wellness — Pain & Spine Center"
+                width={200}
+                height={80}
+                className="h-16 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
               World-class pain management, spine care, and rehabilitation services — delivered with compassion, precision, and innovation.
