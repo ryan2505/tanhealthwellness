@@ -19,7 +19,7 @@ const values = [
 ];
 
 const team = [
-  { name: "Dr. Jovanie Serge Keusseu Tankeu, MD", title: "Medical Director & Pain Management Specialist", initials: "DT", color: "bg-brand-teal" },
+  { name: "Dr. Jovanie Serge Keusseu Tankeu, MD", title: "Medical Director & Pain Management Specialist" },
 ];
 
 export default function AboutPage() {
@@ -107,11 +107,16 @@ export default function AboutPage() {
               <div className="section-label mx-auto w-fit">Our Team</div>
               <h2 className="section-title mb-4">The Experts Behind Your Care</h2>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex justify-center">
               {team.map((member) => (
-                <div key={member.name} className="text-center card-premium p-8">
-                  <div className={`w-20 h-20 rounded-3xl ${member.color} flex items-center justify-center mx-auto mb-5`}>
-                    <span className="text-white font-bold text-xl">{member.initials}</span>
+                <div key={member.name} className="text-center card-premium p-8 max-w-xs w-full">
+                  <div className="relative w-32 h-32 rounded-3xl overflow-hidden mx-auto mb-5 shadow-premium">
+                    <Image
+                      src="/images/dr-tankeu-2.jpg"
+                      alt={member.name}
+                      fill
+                      className="object-cover object-top"
+                    />
                   </div>
                   <h3 className="font-serif font-bold text-brand-navy text-lg mb-1">{member.name}</h3>
                   <p className="text-brand-gray-400 text-sm">{member.title}</p>
