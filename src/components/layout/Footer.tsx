@@ -53,11 +53,11 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex mb-6">
               <Image
-                src="/images/logo.png"
+                src="/images/logo-white.png"
                 alt="TaN Health Wellness — Pain & Spine Center"
                 width={200}
                 height={80}
-                className="h-16 w-auto object-contain brightness-0 invert"
+                className="h-16 w-auto object-contain"
               />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">

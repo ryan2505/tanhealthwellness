@@ -71,14 +71,11 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center group">
               <Image
-                src="/images/logo.png"
+                src={scrolled || !isHome ? "/images/logo-color.png" : "/images/logo-white.png"}
                 alt="TaN Health Wellness — Pain & Spine Center"
                 width={180}
                 height={72}
-                className={cn(
-                  "h-14 w-auto object-contain transition-all duration-300",
-                  scrolled || !isHome ? "brightness-100" : "brightness-0 invert"
-                )}
+                className="h-14 w-auto object-contain transition-all duration-300"
                 priority
               />
             </Link>
