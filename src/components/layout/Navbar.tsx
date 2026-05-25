@@ -69,13 +69,28 @@ export default function Navbar() {
         <div className="container-premium">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center group">
+            <Link href="/" className="relative flex items-center group h-14">
               <Image
-                src={scrolled || !isHome ? "/images/logo-color.png" : "/images/logo-white.png"}
+                src="/images/logo-white.png"
                 alt="TaN Health Wellness — Pain & Spine Center"
                 width={180}
                 height={72}
-                className="h-14 w-auto object-contain transition-all duration-300"
+                className={cn(
+                  "h-14 w-auto object-contain transition-opacity duration-500 absolute",
+                  scrolled || !isHome ? "opacity-0" : "opacity-100"
+                )}
+                priority
+              />
+              <Image
+                src="/images/logo-color.png"
+                alt=""
+                width={180}
+                height={72}
+                className={cn(
+                  "h-14 w-auto object-contain transition-opacity duration-500",
+                  scrolled || !isHome ? "opacity-100" : "opacity-0"
+                )}
+                aria-hidden
                 priority
               />
             </Link>
