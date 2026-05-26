@@ -6,11 +6,13 @@ import { motion } from "framer-motion";
 import { ArrowRight, Award, GraduationCap, MapPin, Quote } from "lucide-react";
 
 const milestones = [
-  { year: "2016", title: "Medical Doctorate", sub: "MD — School of Medicine" },
-  { year: "2016–2019", title: "Family Medicine Residency", sub: "3-year residency program" },
-  { year: "2019–2020", title: "Pain Management Fellowship", sub: "1-year specialized fellowship" },
-  { year: "2021", title: "Founded Tan Health & Wellness", sub: "Mission: serve, heal, improve lives" },
-  { year: "2026", title: "400+ Patients Served", sub: "Estero, FL 33928" },
+  { title: "Medical Doctorate (MD)", sub: "School of Medicine" },
+  { title: "Assistant to Physician", sub: "Psychiatry & Ob/Gyn" },
+  { title: "Sub-Internship — Geriatric Medicine", sub: "Specialized clinical rotation" },
+  { title: "Residency in Family Medicine", sub: "3-year residency program" },
+  { title: "Co-Founder of TaNHealth", sub: "Mission: serve, heal, improve lives" },
+  { title: "Fellowship in Interventional Pain Medicine", sub: "1-year specialized fellowship" },
+  { title: "Founder — TaNHealth Wellness Pain & Spine Center", sub: "Estero, FL 33928" },
 ];
 
 const achievements = [
@@ -109,7 +111,7 @@ export default function AboutSection() {
               <div className="flex flex-col gap-6">
                 {milestones.map((m, i) => (
                   <motion.div
-                    key={m.year}
+                    key={m.title}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
@@ -120,7 +122,6 @@ export default function AboutSection() {
                       <div className="w-2 h-2 rounded-full bg-brand-teal" />
                     </div>
                     <div>
-                      <span className="text-brand-teal text-xs font-bold tracking-widest uppercase">{m.year}</span>
                       <p className="text-brand-navy font-semibold text-sm">{m.title}</p>
                       <p className="text-brand-gray-400 text-xs">{m.sub}</p>
                     </div>

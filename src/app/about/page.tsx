@@ -65,9 +65,9 @@ export default function AboutPage() {
                   ))}
                 </div>
                 <div className="space-y-4 text-brand-gray-500 leading-relaxed">
-                  <p>Dr. Jovanie Serge Keusseu Tankeu holds a Medical Doctorate and a Fellowship in Pain Management. He completed 3 years of family medicine residency followed by 1 year of specialized fellowship training in pain medicine — building a rigorous foundation for comprehensive patient care.</p>
-                  <p>After his fellowship, Dr. Tankeu founded Tan Health & Wellness in Estero, Florida, with one clear mission: to pursue his passion to serve and to heal — assisting patients in living lives where their pain is managed and their overall health continuously improves.</p>
-                  <p>In just over 3 years, he has treated more than 400 patients dealing with chronic and acute pain, including Worker&apos;s Compensation, slip and fall, and car accident cases. He approaches every case with the same commitment: management of pain, medication therapy assistance, and whole-body wellness.</p>
+                  <p>Dr. Jovanie Serge Keusseu Tankeu earned his Medical Doctorate before broadening his clinical expertise through assistantships in Psychiatry and Ob/Gyn, followed by a sub-internship in Geriatric Medicine — building a uniquely comprehensive foundation across multiple disciplines.</p>
+                  <p>He completed a 3-year Residency in Family Medicine, then pursued a Fellowship in Interventional Pain Medicine, equipping him with the most advanced techniques in pain diagnosis and treatment. In 2024, he founded TaNHealth Wellness Pain & Spine Center in Estero, Florida.</p>
+                  <p>His mission is clear: to pursue his passion to serve and to heal — helping every patient live a life where their pain is managed and their overall health continuously improves. He has treated over 400 patients, including Worker&apos;s Compensation, slip and fall, and car accident cases.</p>
                 </div>
                 <Link href="/book-appointment" className="btn-primary mt-8 inline-flex">
                   Schedule a Consultation
