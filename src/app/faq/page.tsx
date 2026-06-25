@@ -23,7 +23,8 @@ const faqs = [
   {
     category: "Insurance & Billing",
     items: [
-      { q: "Which insurance plans do you accept?", a: "We accept most major insurance plans including Aetna, BlueCross BlueShield, Cigna, United Healthcare, Humana, and Medicare. Please call us to verify your specific plan." },
+      { q: "Which insurance plans do you accept?", a: "We currently work with Cigna, First Health, and Medicare. Please call us to verify your specific plan and coverage." },
+      { q: "Do you offer a cash pay (self-pay) option?", a: "Yes. If you are uninsured or prefer not to use insurance, we offer affordable cash pay (self-pay) rates. Contact our office and we'll gladly walk you through the pricing for your visit or procedure." },
       { q: "Do you offer payment plans?", a: "Yes. We understand that medical costs can be a concern. We offer flexible payment arrangements and can work with you to find a plan that fits your budget." },
       { q: "Will my procedure require prior authorization?", a: "Many procedures require prior authorization from your insurance. Our billing team handles this process on your behalf and will notify you of any requirements before your appointment." },
     ],

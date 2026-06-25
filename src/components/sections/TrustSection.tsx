@@ -1,8 +1,15 @@
 "use client";
 
 import { useRef, useEffect } from "react";
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
-import { Award, Shield, Users, Star, Stethoscope, Heart } from "lucide-react";
+import { Award, Shield, Users, Star, Stethoscope, Heart, Banknote } from "lucide-react";
+
+const insurers = [
+  { name: "Cigna", logo: "/insurance/cigna.jpg" },
+  { name: "First Health", logo: "/insurance/first-health.jpg" },
+  { name: "Medicare", logo: "/insurance/medicare.jpg" },
+];
 
 const credentials = [
   { Icon: Award, label: "Medical Doctorate", sub: "MD, Pain Management", color: "text-brand-gold" },
@@ -111,15 +118,31 @@ export default function TrustSection() {
           className="mt-12 pt-10 border-t border-brand-gray-200"
         >
           <p className="text-center text-brand-gray-400 text-sm font-medium mb-6 tracking-widest uppercase">
-            We Accept Most Major Insurance Plans
+            Insurance Accepted &amp; Flexible Payment Options
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-50 grayscale hover:opacity-70 transition-opacity">
-            {["Medicare", "Medicaid", "Aetna", "BlueCross BlueShield", "Cigna", "United Health", "Humana", "Workers' Comp"].map((ins) => (
-              <span key={ins} className="text-brand-gray-500 font-semibold text-sm">
-                {ins}
-              </span>
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            {insurers.map((ins) => (
+              <div
+                key={ins.name}
+                className="flex items-center justify-center bg-white border border-brand-gray-200 rounded-2xl px-8 py-6 shadow-sm hover:shadow-md hover:border-brand-teal/40 transition-all h-28 w-52"
+              >
+                <Image
+                  src={ins.logo}
+                  alt={`${ins.name} insurance accepted`}
+                  width={180}
+                  height={64}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
             ))}
+            <div className="flex items-center justify-center gap-2.5 bg-emerald-50 border border-emerald-200 rounded-2xl px-8 py-6 shadow-sm hover:shadow-md transition-all h-28 w-52">
+              <Banknote size={24} className="text-emerald-600 shrink-0" />
+              <span className="text-emerald-700 font-semibold text-sm leading-tight">Cash Pay<br />Available</span>
+            </div>
           </div>
+          <p className="text-center text-brand-gray-400 text-xs mt-5">
+            Don&apos;t have insurance? We offer affordable self-pay (cash) rates. Contact us for details.
+          </p>
         </motion.div>
       </div>
     </section>

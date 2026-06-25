@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 const resources = [
   { Icon: FileText, title: "New Patient Forms", desc: "Download and complete intake forms before your first visit to save time.", items: ["Patient Registration Form", "Medical History Form", "HIPAA Consent Form", "Insurance Authorization"], color: "bg-brand-teal" },
-  { Icon: ShieldCheck, title: "Insurance Information", desc: "Everything you need to know about coverage, prior authorizations, and billing.", items: ["Insurance plans accepted", "Prior authorization guide", "Billing FAQ", "Financial assistance options"], color: "bg-indigo-500", id: "insurance" },
+  { Icon: ShieldCheck, title: "Insurance Information", desc: "We work with Cigna, First Health, and Medicare. Cash pay (self-pay) is also available.", items: ["Cigna", "First Health", "Medicare", "Cash Pay (self-pay) option"], color: "bg-indigo-500", id: "insurance" },
   { Icon: UserCheck, title: "New Patient Guide", desc: "What to expect at your first appointment and how to prepare.", items: ["What to bring", "What to expect", "Preparing for procedures", "Post-procedure care"], color: "bg-brand-gold", id: "new-patients" },
-  { Icon: CreditCard, title: "Billing & Payments", desc: "Understand your billing, make payments, and explore payment plan options.", items: ["Pay your bill online", "Payment plan options", "Explanation of benefits", "Contact billing team"], color: "bg-emerald-600" },
+  { Icon: CreditCard, title: "Billing & Payments", desc: "Understand your billing, make payments, and explore cash pay and payment plan options.", items: ["Pay your bill online", "Cash pay (self-pay) rates", "Payment plan options", "Contact billing team"], color: "bg-emerald-600" },
 ];
 
 const videos = [
